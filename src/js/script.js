@@ -69,8 +69,8 @@
 
           clickedBook.classList.remove('favorite');
 
-          thisBook.favoriteBooks.splice(bookId, 1);
-          //thisBook.favoriteBooks.pop(bookId);
+          //thisBook.favoriteBooks.splice(bookId, 1); - zapytac
+          thisBook.favoriteBooks.pop(bookId);
           console.log('favoriteArray', thisBook.favoriteBooks);
         } else {
           clickedBook.classList.add('favorite');

@@ -101,10 +101,10 @@
       const thisBook = this;
       for (let book of thisBook.data) {
         const filteredBook = document.querySelector(
-          '.book__image[data-id="' + book.id + '"]'
+          `.book__image[data-id="${book.id}"]`
         );
         let shouldBeHidden = false;
-        for (const filter of thisBook.filters) {
+        for (let filter of thisBook.filters) {
           if (!book.details[filter]) {
             shouldBeHidden = true;
             break;
